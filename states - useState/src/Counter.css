@@ -1,0 +1,22 @@
+#btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn{
+    background-color: rgb(57, 140, 192);
+    color: white;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+#counter{
+    color: rgb(157, 38, 197);
+    background-color: rgb(104, 184, 227);
+    padding: 12px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+}
