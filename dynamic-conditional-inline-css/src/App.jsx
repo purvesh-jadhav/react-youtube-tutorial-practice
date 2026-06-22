@@ -14,7 +14,7 @@ function App() {
 
   const [grid,setGrid]=useState(true)
 
-  const updateTheme=(bgColor,textColor)=>{
+  const updateTheme=(bgColor)=>{
       setCardStyle({...cardStyle,backgroundColor:bgColor})
   }
 
