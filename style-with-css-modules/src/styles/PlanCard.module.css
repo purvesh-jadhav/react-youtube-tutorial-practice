@@ -1,0 +1,53 @@
+.cardContainer{
+    background-color: rgb(87, 148, 189);
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.upperSection{
+   height: 75px;
+   width: auto;
+   background-color: rgb(110, 196, 213);
+   padding: 20px;
+}
+
+.heading{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.subheading{
+    margin-top: 2px;
+}
+
+.footerSection{
+    height: 275px;
+    width: auto;
+    background-color: rgb(100, 232, 192);
+    overflow: hidden;
+    padding: 20px;
+}
+
+.priceTag{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.priceSubtag{
+    margin-top: 4px;
+}
+
+.features{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.startButton{
+    margin-top: 15px;
+    height: 35px;
+    width: 98%;
+    background-color: rgb(196, 226, 255);
+    border-radius: 5px;
+}
