@@ -26,7 +26,7 @@ const App = () => {
       />
 
       <br /><br />
-
+      
       <button onClick={inputHandler}>
         Focus on input field
       </button>
