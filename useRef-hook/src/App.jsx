@@ -3,6 +3,7 @@ import React, { useRef } from 'react'
 const App = () => {
 
   const inputRef = useRef(null);
+  const h2Ref=useRef(null)
 
   const inputHandler = () => {
     console.log(inputRef);
@@ -10,7 +11,10 @@ const App = () => {
     inputRef.current.style.color="red";
     inputRef.current.placeholder='enter password';
     inputRef.current.value='123';
+  }
 
+  const h2Handler = ()=>{
+    h2Ref.current.style.color="purple";
   }
 
   return (
@@ -30,6 +34,9 @@ const App = () => {
       <button onClick={inputHandler}>
         Focus on input field
       </button>
+
+      <h2 ref={h2Ref}>Purvesh Jadhav</h2>
+      <button onClick={h2Handler}>Handler</button>
     </div>
   )
 }
