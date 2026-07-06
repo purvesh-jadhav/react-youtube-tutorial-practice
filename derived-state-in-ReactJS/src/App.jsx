@@ -1,33 +1,34 @@
-  import React, { useState } from "react";
+import React, { useState } from "react";
 
-  const App = () => {
-    const [users, setUsers] = useState([]);
-    const [user, setUser] = useState("");
+const App = () => {
+  const [users, setUsers] = useState([]);
+  const [user, setUser] = useState("");
 
-    function handleAllUsers() {
-      setUsers([...users, user]);
-    }
+  function handleAllUsers() {
+    setUsers([...users, user]);
+  }
 
-    const total=users.length;
-    const last=users[users.length-1]
+  const total=users.length;
+  const last=users[users.length-1]
 
-    return (
-      <div>
-        <h2>Total User : {total}</h2>
-        <h2>Last User : {last}</h2>
-        <input
-          onChange={(event) => setUser(event.target.value)}
-          type="text"
-          placeholder="Add new user"
-        />
+  return (
+    <div>
+      <h2>Total User : {total}</h2>
+      <h2>Last User : {last}</h2>
 
-        <button onClick={handleAllUsers}>Add User</button>
+      <input
+        onChange={(event) => setUser(event.target.value)}
+        type="text"
+        placeholder="Add new user"
+      />
 
-        {users.map((item, index) => (
-          <h4 key={index}>{item}</h4>
-        ))}
-      </div>
-    ); 
-  };
+      <button onClick={handleAllUsers}>Add User</button>
 
-  export default App;
+      {users.map((item, index) => (
+        <h2 key={index}>{item}</h2>
+      ))}
+    </div>
+  ); 
+};
+
+export default App;
