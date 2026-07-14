@@ -27,7 +27,6 @@ const App = () => {
       <h2>Name:{data.name}</h2>
       <h2>City:{data.address.city}</h2>
       <h2>Name:{data.address.country}</h2>
-
     </div>
   )
 }
